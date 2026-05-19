@@ -38,3 +38,44 @@ IP-Planner/
   requirements.txt
   pytest.ini
   README.md
+
+  ## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/SamadAdebimpe/NetPlanIQ.git
+cd NetPlanIQ
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+Run the application:
+
+```bash
+python subnet.py
+```
+
+## Technologies Used
+
+- Python
+- netaddr
+- openpyxl
+- pytest
+
+## Roadmap
+
+- IPv4 subnet planning
+- IPv6 subnet planning
+- JSON export support
+- CSV import support
+- Web dashboard
+- Network topology visualization
+- API integration
+- Terraform/Ansible export support
