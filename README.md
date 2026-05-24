@@ -25,6 +25,12 @@ It is designed to help network engineers and infrastructure teams produce accura
 - Safe Excel worksheet naming
 - Automated tests for core subnet logic and exporter helpers
 
+## Case Study
+
+Read the project case study here:
+
+[NetPlanIQ Case Study](docs/case-study.md)
+
 ## Project Structure
 
 ```text
