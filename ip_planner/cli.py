@@ -11,6 +11,7 @@ from ip_planner.core import (
 )
 
 from ip_planner.exporters import export_to_excel, export_p2p_to_excel
+from ip_planner.importers import import_allocations_from_csv
 
 # GET HOST BASED NETWORK
 def get_host_base_network():
@@ -349,10 +350,27 @@ def main():
         choice = input("Enter your choice: ").strip()
 
         if choice == "1":
+            print("\n[bold cyan]Allocation Input Method[/bold cyan]")
+            print("1. Enter allocations manually")
+            print("2. Import allocations from CSV")
+
+            input_method = input("Choose input method: ").strip()
+
+            if input_method == "2":
+                csv_path = input("Enter CSV file path: ").strip()
+
+                try:
+                    allocations = import_allocations_from_csv(csv_path)
+                    print(f"[bold green]Imported {len(allocations)} allocation(s) from CSV.[/bold green]")
+                except ValueError as e:
+                    print(f"[bold red]CSV import failed: {e}[/bold red]")
+                    continue
+            else:
+                allocations = get_host_allocations()
+
             base_network = get_host_base_network()
             show_network_info(base_network)
 
-            allocations = get_host_allocations()
             sorted_allocations = sort_allocations_by_hosts(allocations)
 
             print("\n[bold magenta]Sorted Allocation Requirements[/bold magenta]")
@@ -379,6 +397,7 @@ def main():
                         include_ip_sheets=include_ip_sheets
                     )
 
+                    
         elif choice == "2":
             p2p_network = get_p2p_network()
             show_p2p_result(p2p_network)
