@@ -63,7 +63,11 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-## Usage
+## Usage Guide
+
+See the usage guide:
+
+[NetPlanIQ Usage Guide](docs/usage.md)
 
 Run the application:
 
@@ -79,6 +83,10 @@ python subnet.py
 - pytest
 
 ## Roadmap
+
+See the project roadmap:
+
+[NetPlanIQ Roadmap](ROADMAP.md)
 
 - IPv4 subnet planning
 - IPv6 subnet planning
