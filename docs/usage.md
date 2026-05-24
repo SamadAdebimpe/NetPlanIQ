@@ -36,6 +36,30 @@ IP Network Planner
 2. Point-to-Point Calculator
 3. Exit
 
+## CSV Import
+
+NetPlanIQ can import host allocation requirements from a CSV file.
+
+Example CSV:
+
+name,hosts,preference
+Core Services,50,growth
+User VLAN,15,auto
+Guest WiFi,80,balanced
+Management,20,tight
+
+A sample file is available at:
+
+examples/sample_allocations.csv
+
+When prompted for the allocation input method, choose:
+
+2. Import allocations from CSV
+
+Then enter:
+
+examples/sample_allocations.csv
+
 ## Host-Based Allocation Example
 
 Choose:

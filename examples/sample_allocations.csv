@@ -1,0 +1,5 @@
+name,hosts,preference
+Core Services,50,growth
+User VLAN,15,auto
+Guest WiFi,80,balanced
+Management,20,tight
