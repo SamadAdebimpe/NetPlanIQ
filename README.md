@@ -1,5 +1,8 @@
 # NetPlanIQ
 
+(https://github.com/SamadAdebimpe/NetPlanIQ/actions/workflows/tests.yml/badge.svg)
+
+
 NetPlanIQ is a Python-based network planning tool for IPv4 subnet allocation, capacity validation, point-to-point link calculation, and Excel reporting.
 
 It is designed to help network engineers and infrastructure teams produce accurate, documented IP addressing plans with clear subnet details, gateway recommendations, remaining address blocks, and implementation-ready reports.
